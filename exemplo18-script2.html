@@ -1,0 +1,258 @@
+<!DOCTYPE html> 
+<html>
+    <img src="fundo2.png" style="position:absolute; width: 100%">
+
+    <head>
+        <img src="piani.png" style="position: fixed; width: 1500px;height: 450px; margin-left:5px;margin-top: 30px"></head>
+        
+    <body onkeydown="Serenata(event)">
+        <div style="position:fixed; background-color: black; width: 750px; height: 160px;margin-left: 340px; margin-top: 395px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
+
+        <audio id="a1" controls style="width: 0px" preload="auto">
+            <source src="piano/040.wav">
+        </audio>
+
+        <audio id="a2" controls style="width: 0px" preload="auto">
+            <source src="piano/041.wav">
+        </audio>
+
+        <audio id="a3" controls style="width: 0px" preload="auto">
+            <source src="piano/042.wav">
+        </audio>
+
+        <audio id="a4" controls style="width: 0px" preload="auto">
+            <source src="piano/043.wav">
+        </audio>
+
+        <audio id="a5" controls style="width: 0px" preload="auto">
+            <source src="piano/044.wav">
+        </audio>
+       
+        <audio id="a6" controls style="width: 0px" preload="auto">
+            <source src="piano/045.wav">
+        </audio>
+
+        <audio id="a7" controls style="width: 0px" preload="auto">
+            <source src="piano/046.wav">
+        </audio>
+
+        <audio id="a8" controls style="width: 0px" preload="auto">
+            <source src="piano/047.wav">
+        </audio>
+
+        <audio id="a9" controls style="width: 0px" preload="auto">
+            <source src="piano/048.wav">
+        </audio>
+
+        <audio id="a10" controls style="width: 0px" preload="auto">
+            <source src="piano/049.wav">
+        </audio>
+
+        <audio id="a11" controls style="width: 0px" preload="auto">
+            <source src="piano/050.wav">
+        </audio>
+
+        <audio id="a12" controls style="width: 0px" preload="auto">
+            <source src="piano/051.wav">
+        </audio>
+       
+        <audio id="a13" controls style="width: 0px" preload="auto">
+            <source src="piano/052.wav">
+        </audio>
+
+        <audio id="a14" controls style="width: 0px" preload="auto">
+            <source src="piano/053.wav">
+        </audio>
+
+        <audio id="house" controls style="width: 0px" preload="auto">
+            <source src="house.mp3">
+        </audio>
+    
+        <audio id="mozart" controls style="width: 0px" preload="auto">
+            <source src="mozart.wav">
+        </audio>
+
+        <audio id="bettoven" controls style="width: 0px" preload="auto">
+            <source src="bettoven.mp3">
+        </audio>
+
+        <audio id="piano" controls style="width: 0px" preload="auto">
+            <source src="piano.mp3">
+        </audio>
+       
+
+    <button id="Button.do"onclick="donota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Do<br><br><br><br>L</button>
+    <button id="Button.re"onclick="renota()" style="width: 35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Re<br><br><br><br>K</button>
+    <button id="Button.mi"onclick="minota()" style="width:35px;height:90px;background-color:white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Mi<br><br><br><br>J</button>
+    <button id="Button.fa"onclick="fanota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Fa<br><br><br><br>H</button>
+    <button id="Button.sol"onclick="solnota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Sol<br><br><br><br>G</button>
+    <button id="Button.la"onclick="lanota()" style="width: 35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">La<br><br><br><br>F</button>
+    <button id="Button.si"onclick="sinota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Si<br><br><br><br>D</button>
+    <button id="Button.do."onclick="donota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Do<br><br><br><br>P</button>
+    <button id="Button.re."onclick="renota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Re<br><br><br><br>O</button>
+    <button id="Button.mi."onclick="minota()" style="width:35px;height:90px;background-color:white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Mi<br><br><br><br>I</button>
+    <button id="Button.fa."onclick="fanota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Fa<br><br><br><br>U</button>
+    <button id="Button.sol."onclick="solnota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Sol<br><br><br><br>Y</button>
+    <button id="Button.la."onclick="lanota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">La<br><br><br><br>T</button>
+    <button id="Button.si."onclick="sinota()" style="width:35px;height:90px;background-color: white; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Si<br><br><br><br>R</button>
+    <button onclick="stopAll()" style="width: 80px;height:90px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">Stop<br><br><br><br><br></button>
+    <div style="margin-top: 10px; margin-left: 80px">
+    <button id="Button.ho"onclick="house()" style="width:150px;height:40px; top: 300px; background-color:white">House</button>
+    <button id="Button.mo"onclick="mozart()" style="width:150px;height:40px; top: 300px; background-color: white">Mozart</button>
+    <button id="Button.be"onclick="bettoven()" style="width:150px;height:40px; top: 300px; background-color: white">Bettoven</button>
+    <button id="Button.pi"onclick="piano()" style="width:150px;height:40px; top: 300px;background-color: white">Piano</button>
+    
+</div>
+
+<script>
+    function donota() {
+        document.getElementById('a1').pause();
+        document.getElementById('a1').currentTime=0;
+        document.getElementById('a1').play();
+    }
+    function renota() {
+        document.getElementById('a2').pause();
+        document.getElementById('a2').currentTime=0;
+        document.getElementById('a2').play();    
+    } 
+    function minota() {
+        document.getElementById('a3').pause();
+        document.getElementById('a3').currentTime=0;
+        document.getElementById('a3').play();
+    }
+    function fanota() {
+        document.getElementById('a4').pause();
+        document.getElementById('a4').currentTime=0;
+        document.getElementById('a4').play();    
+    } 
+    function solnota() {
+        document.getElementById('a5').pause();
+        document.getElementById('a5').currentTime=0;
+        document.getElementById('a5').play();
+    }
+    function lanota() {
+        document.getElementById('a6').pause();
+        document.getElementById('a6').currentTime=0;
+        document.getElementById('a6').play();    
+    } 
+    function sinota() {
+        document.getElementById('a7').pause();
+        document.getElementById('a7').currentTime=0;
+        document.getElementById('a7').play();
+    }
+    function donota1() {
+        document.getElementById('a1').pause();
+        document.getElementById('a1').currentTime=0;
+        document.getElementById('a1').play();
+    }
+    function renota1() {
+        document.getElementById('a2').pause();
+        document.getElementById('a2').currentTime=0;
+        document.getElementById('a2').play();    
+    } 
+    function minota1() {
+        document.getElementById('a3').pause();
+        document.getElementById('a3').currentTime=0;
+        document.getElementById('a3').play();
+    }
+    function fanota1() {
+        document.getElementById('a4').pause();
+        document.getElementById('a4').currentTime=0;
+        document.getElementById('a4').play();    
+    } 
+    function solnota1() {
+        document.getElementById('a5').pause();
+        document.getElementById('a5').currentTime=0;
+        document.getElementById('a5').play();
+    }
+    function lanota1() {
+        document.getElementById('a6').pause();
+        document.getElementById('a6').currentTime=0;
+        document.getElementById('a6').play();    
+    } 
+    function sinota1() {
+        document.getElementById('a7').pause();
+        document.getElementById('a7').currentTime=0;
+        document.getElementById('a7').play();
+    }  
+    function house() {
+        document.getElementById('house').pause();
+        document.getElementById('house').currentTime=0;
+        document.getElementById('house').play();    
+    }  
+    
+    function mozart() {
+        document.getElementById('mozart').pause();
+        document.getElementById('mozart').currentTime=3;
+        document.getElementById('mozart').play();    
+    }
+    function bettoven() {
+        document.getElementById('bettoven').pause();
+        document.getElementById('bettoven').currentTime=8;
+        document.getElementById('bettoven').play();    
+    }
+    function piano() {
+        document.getElementById('piano').pause();
+        document.getElementById('piano').currentTime=0;
+        document.getElementById('piano').play();    
+    }
+    function stopAll() {
+        var audios = document.getElementsByTagName("audio");
+        for (var i = 0; i < audios.length; i++) {
+        audios[i].pause();
+        audios[i].currentTime = 0;
+        }
+    } 
+   
+    function Serenata(event){
+
+       var key=event.keyCode;
+
+       if (key==76) //tecla do L: teclado ascii
+        donota();  //chama a função donota
+        else if (key==75) //tecla do K: teclado ascii
+        renota();
+        else if (key==74)//tecla do J: teclado ascii
+        minota();
+        else if (key==72)//tecla do H: teclado ascii
+        fanota();
+        else if (key==71)//tecla do G: teclado ascii
+        solnota();
+        else if (key==70)//tecla do F: teclado ascii
+        lanota();
+        else if (key==68)//tecla do D: teclado ascii
+        sinota();
+        else if (key==80) //tecla do P: teclado ascii
+        donota1();
+        else if (key==79)//tecla do O: teclado ascii
+        renota1();
+        else if (key==73)//tecla do I: teclado ascii
+        minota1();
+        else if (key==85)//tecla do U: teclado ascii
+        fanota1();
+        else if (key==89)//tecla do Y: teclado ascii
+        solnota1();
+        else if (key==84)//tecla do T: teclado ascii
+        lanota1();
+        else if (key==82)//tecla do R: teclado ascii
+        sinota1();
+        else if (key==77)//tecla do M: teclado ascii
+        house();
+        else if (key==78)//tecla do N
+        mozart();
+        else if (key==66)//tecla do B: teclado ascii
+        bettoven();
+        else if (key==32) //tecla do space
+        stopAll();
+        else piano();
+    }
+   
+    </script>
+    </div>
+    </body>
+
+<footer>
+    <img src="pe.png" style="position:fixed; width: 80px;height: 130px; margin-inline-start: 30%; margin-top: 515px">
+    <img src="pe.png" style="position: fixed; width: 80px;height: 130px; margin-inline-start: 67%; margin-top: 515px">
+</footer>
+</html>
